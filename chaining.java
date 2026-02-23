@@ -14,8 +14,7 @@ public class chaining {
     }
 
     private int hashFunction(int key) {
-        //return Math.abs(key) % size;
-        return Math.floorMod(key, size);
+        return Math.abs(key) % size;
     }
 
     public void insertListOfKeys(int[] keys) {
