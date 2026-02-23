@@ -15,8 +15,7 @@ public class linearprobing {
     }
 
     private int hashFunction(int key) { //Simple uniform hashing function
-        //return Math.abs(key) % size;
-        return Math.floorMod(key, size);
+        return Math.abs(key) % size;
     }
 
     public void insertListOfKeys(int[] keys) {
